@@ -97,4 +97,8 @@ open_button2.pack()
 
 open_button3 = tk.Button(root, text="visionneuse", command=sys32.apps.visionneuse.open_view)
 open_button3.pack()
+
+open_button4 = tk.Button(root, text="Installer autre chose", command=sys32.apps.installer.installer)
+open_button4.pack()
+
 root.mainloop()
