@@ -97,4 +97,7 @@ open_button2.pack()
 
 open_button3 = tk.Button(root, text="visionneuse", command=sys32.apps.visionneuse.open_view)
 open_button3.pack()
-root.mainloop()
+try:
+    root.mainloop()
+except:
+    error()
