@@ -12,7 +12,7 @@ def new_file():
 
 def open_file(file_path=None):
     if not file_path:
-        file_path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt")])
+        file_path = filedialog.askopenfilename(filetypes=[("Text files", "*.txt"),("Program files", "*.py"),("No console programs","*.pyw")])
     if file_path:
         with open(file_path, 'r') as file:
             content = file.read()
